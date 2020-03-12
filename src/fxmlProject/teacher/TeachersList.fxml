@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlProject.teacher.TeachersList">
+   <bottom>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="711.0" layoutY="10.0" mnemonicParsing="false" onAction="#goMain" prefHeight="25.0" prefWidth="75.0" text="Back" />
+            <Button layoutX="32.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadTable" text="Load " />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" prefHeight="465.0" prefWidth="800.0">
+               <columns>
+                  <TableColumn fx:id="teacherName" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Nume profesor" />
+                  <TableColumn fx:id="teacherEmail" prefWidth="200.0" text="Email profesor" />
+                  <TableColumn fx:id="subjectName" minWidth="0.0" prefWidth="300.0" text="Materie predata" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <top>
+      <AnchorPane prefHeight="69.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="332.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de profesori">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
